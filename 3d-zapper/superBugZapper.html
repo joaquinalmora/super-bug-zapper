@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Super Bug Zapper 3D</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        background-color: black; 
+        color: white;
+        font-family: 'Arial', sans-serif;
+      }
+      h1 {
+        margin: 20px 0 0 0; 
+        font-size: 2em;
+        font-weight: normal;
+      }
+      canvas {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <h1>Super Bug Zapper 3D</h1>
+    <div id="win_lose"></div>
+    <div id="bacteriaReached">Bacteria reached: 0</div>
+    <div id="player_points">Player gains: 0</div>
+    <canvas id="webgl" width="700" height="700"></canvas>
+    <script src="../libs/webgl-utils.js"></script>
+    <script src="../libs/webgl-debug.js"></script>
+    <script src="../libs/cuon-utils.js"></script>
+    <script src="../libs/cuon-matrix.js"></script>
+    <script src="playingField.js"></script>
+  </body>
+</html>
